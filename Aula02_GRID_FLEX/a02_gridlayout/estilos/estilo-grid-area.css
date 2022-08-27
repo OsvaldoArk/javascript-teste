@@ -1,0 +1,51 @@
+.container{
+    display: grid;
+    grid-template-rows: 10vh 10vh 35vh 35vh 10vh;
+    grid-template-columns: 20vw 60vw 20vw;
+    gap:10px;
+    grid-template-areas:
+    "logo header header"
+    "nav nav nav"
+    "sessao-1 sessao-1 aside"
+    "sessao-2 sessao-2 aside"
+    "footer footer footer";
+}
+
+.nova{
+    background-color: darkgreen;
+    grid-area: logo;
+}
+
+header{
+    background-color: cornflowerblue;
+    grid-area: header;
+}
+
+nav{
+    background-color: crimson;
+    grid-area: nav;
+}
+
+.primeira{
+    background: hsla(174, 66%, 62%, 1);
+    background: linear-gradient(45deg, hsla(174, 66%, 62%, 1) 0%, hsla(254, 64%, 46%, 1) 59%);
+    background: -moz-linear-gradient(45deg, hsla(174, 66%, 62%, 1) 0%, hsla(254, 64%, 46%, 1) 59%);
+    background: -webkit-linear-gradient(45deg, hsla(174, 66%, 62%, 1) 0%, hsla(254, 64%, 46%, 1) 59%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5CDED1", endColorstr="#4F2BC2", GradientType=1 );
+    grid-area: sessao-1;
+}
+
+.segunda{
+    background-color: tomato;
+    grid-area: sessao-2;
+}
+
+aside{
+    background-color: darkorange;
+    grid-area: aside;
+}
+
+footer{
+    background-color: deeppink;
+    grid-area: footer;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="produtos.html" method="post">
+        <label>nome*:
+            <input type="text" name="nome" id="nomeId" placeholder="digite seu nome" required>
+        </label><br>
+        <label>idade:
+            <input type="number" >
+        </label><br>
+        <label>Data de aniversários:
+            <input type="date" >
+        </label><br>
+        <label>senha:
+            <input type="password" name="password" id="passwordId" placeholder="digite sua senha">
+        </label><br>
+        <label>email:
+            <input type="email" name="password" id="passwordId" placeholder="">
+        </label><br>
+        <h6>escolaridade:</h6>
+        <label>fundamental
+            <input type="radio" name="escolaridade" checked>
+        </label><br>
+        <label>técnico
+            <input type="radio" name="escolaridade">
+        </label><br>
+        <label>médio
+            <input type="radio" name="escolaridade">
+        </label><br>
+        <label>superior
+            <input type="radio" name="escolaridade">
+        </label><br>
+
+        <h6>conhecimentos:</h6>
+        <label>
+            <input type="checkbox">
+            computação
+        </label><br>
+        <label>
+            <input type="checkbox">
+            inglês
+        </label><br>
+        <label>
+            <input type="checkbox">
+            navegação web
+        </label><br>
+        <label>
+            <input type="checkbox">
+            escrita empresarial
+        </label><br>
+
+        <h6>Naturalidade</h6>
+        <select name="" id="">
+            <option value="0" disabled selected>Selecione um estado</option>
+            <optgroup label="nordeste">
+
+                <option value="ceara">CE</option>
+                <option value="bahia">BA</option>
+                <option value="rio-grande-do-norte">RN</option>
+                <option value="pernambuco">PE</option>
+                <option value="piaui">PI</option>
+            </optgroup>
+            <optgroup label="sudeste">
+                <option value="rio">RJ</option>
+                <option value="sampa">SP</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <button type="submit">enviar dados</button>
+    </form>
+</body>
+</html>

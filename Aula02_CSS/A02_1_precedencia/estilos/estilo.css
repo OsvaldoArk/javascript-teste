@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+
+/* Isso é um comentário */
+
+*{
+	box-sizing: border-box;
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h1{
+	width: 50vw;
+	height: 10vh;
+	margin: 1rem 1rem 2rem 2rem;
+    font-size: 5rem;
+	font-family: 'Mouse Memoirs', sans-serif;
+    color:darkmagenta;
+	background-color: cornflowerblue;
+}
+
+.navegacao{
+	width: 50vw;
+	height: 10vh;
+	margin: 1rem 1rem 2rem 2rem;
+	padding: 2rem;
+	font-size: 1.5rem;
+	background-color: chartreuse;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+.navegacao>ul{
+    list-style-type: none;
+}
+
+.navegacao>ul>li{
+    font-size: 1em;
+    margin-left: 2em;
+    display: inline;
+}
+
+.navegacao>ul>li>a{
+    text-decoration: none;
+    color:black;
+}
